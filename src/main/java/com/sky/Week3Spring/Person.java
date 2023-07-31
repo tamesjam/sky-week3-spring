@@ -1,3 +1,5 @@
+package com.sky.Week3Spring;
+
 import org.hibernate.validator.constraints.Length;
 import org.springframework.stereotype.Component;
 
@@ -22,6 +24,15 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     public String getFirstName() {
