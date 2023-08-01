@@ -26,8 +26,8 @@ public class SpringController {
     }
 
     @PostMapping("/createPeople")
-    public HttpEntity<List<Person>> createPeople(@RequestBody List<Person> persons) {
-        return new ResponseEntity<>(service.createPeople(persons), HttpStatus.CREATED);
+    public HttpEntity<List<Person>> createPeople(@RequestBody List<Person> people) {
+        return new ResponseEntity<>(service.createPeople(people), HttpStatus.CREATED);
     }
 
     @GetMapping("/getPeople")
