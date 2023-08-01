@@ -1,6 +1,8 @@
 package com.sky.Week3Spring.rest;
 
-import com.sky.Week3Spring.Person;
+import com.sky.Week3Spring.domain.Person;
+import com.sky.Week3Spring.services.SpringService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

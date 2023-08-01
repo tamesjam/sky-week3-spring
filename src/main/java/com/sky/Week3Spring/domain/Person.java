@@ -1,12 +1,16 @@
-package com.sky.Week3Spring;
+package com.sky.Week3Spring.domain;
 
 import org.hibernate.validator.constraints.Length;
 import org.springframework.stereotype.Component;
-
 import javax.validation.constraints.NotBlank;
 
-@Component
+import javax.persistence.*;
+
+@Entity
 public class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @NotBlank
     @Length(min = 2, max = 30)
     private String firstName;
